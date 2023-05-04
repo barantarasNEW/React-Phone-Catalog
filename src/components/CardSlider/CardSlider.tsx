@@ -6,7 +6,7 @@ import { Product } from '../../types/Product';
 import Card from '../Card/Card';
 import CardSliderButt from './CardSliderButt/CardSliderButt';
 
-const width = 272 + 16;
+const width = 288;
 const count = 4;
 
 type Props = {
