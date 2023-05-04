@@ -1,6 +1,6 @@
-import { Filter } from '../types/Filter';
-import { Product } from '../types/Product';
-import { Sort } from '../types/Sort';
+import { Filter } from '../../types/Filter';
+import { Product } from '../../types/Product';
+import { Sort } from '../../types/Sort';
 import { sortProducts } from './sortProducts';
 
 export const filterProducts = (

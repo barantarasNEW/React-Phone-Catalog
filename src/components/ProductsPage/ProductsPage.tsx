@@ -9,7 +9,7 @@ import './ProductsPage.scss';
 import { Sort } from '../../types/Sort';
 import { Product } from '../../types/Product';
 
-import { sortProducts } from '../../helpers/sortProducts';
+import { sortProducts } from '../utils/sortProducts';
 import { findValue } from '../../helpers/findValue';
 
 import Select from '../Select/Select';

@@ -24,7 +24,7 @@ const ShopbarSearch = () => {
   };
 
   return (
-    <>
+    <div className="shopbar__search-block">
       <input
         ref={inputRef}
         className="shopbar__search"
@@ -44,7 +44,7 @@ const ShopbarSearch = () => {
           </button>
         )
         : <img src="./icons/search.svg" alt="icon" />}
-    </>
+    </div>
   );
 };
 

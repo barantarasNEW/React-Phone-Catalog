@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 import './Select.scss';
-import { SearchLink } from '../../helpers/searchLink';
+import { SearchLink } from '../utils/searchLink';
 import { Option } from '../../types/Option';
 
 type Props = {

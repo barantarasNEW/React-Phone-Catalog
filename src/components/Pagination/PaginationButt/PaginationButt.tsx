@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { SearchLink } from '../../../helpers/searchLink';
+import { SearchLink } from '../../utils/searchLink';
 
 const buttonClasses = (isDis: boolean) => cn(
   'button-block', { 'button-dis': isDis },

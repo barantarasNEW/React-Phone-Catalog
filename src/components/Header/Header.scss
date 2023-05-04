@@ -6,8 +6,8 @@
   box-shadow: 0 1px 0 $elementsColor;
 
   &__wrapper {
-    display: flex;
     height: $headerHeight;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 24px;
@@ -29,10 +29,30 @@
 
   &__logo {
     height: 100%;
+    width: 25px;
     @include flexCenter;
+    margin-right: 15px;
+
+    @include onTablet {
+      width: auto;
+    }
   }
 
   &__right {
     height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu {
+    height: 100%;
+    @include flexCenter;
+    width: 66px;
+    height: 100%;
+    box-shadow: -1px 0 0 $elementsColor;
+
+    @include onDesktop {
+      display: none;
+    }
   }
 }

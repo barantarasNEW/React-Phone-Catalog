@@ -4,6 +4,7 @@ import './Menu.scss';
 
 import Navbar from '../Header/Navbar/Navbar';
 import { MenuContext } from '../../contexts/MenuContext';
+import Shopbar from '../Header/Shopbar/Shopbar';
 
 const Menu = () => {
   const { isMenu } = useContext(MenuContext);
@@ -19,6 +20,7 @@ const Menu = () => {
   return (
     <div className={cn('menu', { active: isMenu })}>
       <Navbar />
+      <Shopbar />
     </div>
   );
 };
