@@ -1,9 +1,19 @@
-# React TypeScript Starter Pack
+# **React phone catalog**
 
-To use this template click `Use this template`
+## A single-page application implements online store functionality. User can browse products, add them to the cart and favorites, search products, sort products, change the quantity of products in the cart, and view product details.
 
-### Available Scripts
+**[DEMO LINK](https://barantarasnew.github.io/todo-app/)**
 
-`Deploy` - available to deploy your application to gh-pages
-
-`SCSS Preprocessor` - available to write your styles with modern style language
+## **Technologies**
++ React.js
++ React Router(v6)
++ JSX
++ TypeScript
++ JavaScript
++ react-transition-group
++ slick-slider
++ LoDash
++ classnames
++ Fetch, API
++ Sass (SCSS)
++ BEM methodology
