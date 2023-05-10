@@ -6,12 +6,12 @@ import { CartContext } from '../../../contexts/CartContext';
 
 import ShopbarItemDyn from './ShopbarItemDyn/ShopbarItemDyn';
 
-const Shopbar = () => {
+const Shopbar = ({ ...props }) => {
   const { favorites } = useContext(FavoritesContext);
   const { cart } = useContext(CartContext);
 
   return (
-    <nav className="shopbar">
+    <nav className="shopbar" style={{ ...props }}>
       <ul className="shopbar__list">
         <li className="shopbar__item">
           <ShopbarItemDyn

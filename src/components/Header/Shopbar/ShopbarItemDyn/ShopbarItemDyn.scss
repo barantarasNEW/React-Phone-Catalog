@@ -8,7 +8,7 @@
   box-shadow: -1px 0 0 $elementsColor;
   position: relative;
 
-    &::after {
+  &::after {
     @include barAnimation;
   }
   

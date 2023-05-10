@@ -2,11 +2,11 @@
 @import "../../../styles/utils/mixins";
 
 .shopbar {
-  height: 100%;
   display: none;
 
   @include onDesktop {
     display: block;
+    height: 100%;
   }
 
   &__list {

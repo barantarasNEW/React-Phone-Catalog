@@ -20,7 +20,7 @@ const Menu = () => {
   return (
     <div className={cn('menu', { active: isMenu })}>
       <Navbar />
-      <Shopbar />
+      <Shopbar display="block" />
     </div>
   );
 };
