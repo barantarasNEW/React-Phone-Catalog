@@ -5,7 +5,7 @@
     "static/css/1.17ddbbb0.chunk.css": "./static/css/1.17ddbbb0.chunk.css",
     "static/js/1.3ad0fdc4.chunk.js": "./static/js/1.3ad0fdc4.chunk.js",
     "static/js/1.3ad0fdc4.chunk.js.map": "./static/js/1.3ad0fdc4.chunk.js.map",
-    "main.css": "./static/css/main.82a35813.chunk.css",
+    "main.css": "./static/css/main.14eda1f1.chunk.css",
     "main.js": "./static/js/main.1104fd13.chunk.js",
     "main.js.map": "./static/js/main.1104fd13.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.3a9f8c23.js",
@@ -34,7 +34,7 @@
     "static/css/5.a1be631c.chunk.css.map": "./static/css/5.a1be631c.chunk.css.map",
     "static/css/6.d46d39a1.chunk.css.map": "./static/css/6.d46d39a1.chunk.css.map",
     "static/css/7.e47427d2.chunk.css.map": "./static/css/7.e47427d2.chunk.css.map",
-    "static/css/main.82a35813.chunk.css.map": "./static/css/main.82a35813.chunk.css.map",
+    "static/css/main.14eda1f1.chunk.css.map": "./static/css/main.14eda1f1.chunk.css.map",
     "static/js/4.cff56ca6.chunk.js.LICENSE.txt": "./static/js/4.cff56ca6.chunk.js.LICENSE.txt",
     "static/media/index.scss": "./static/media/Mont-SemiBold.8979d71a.otf",
     "static/media/slick-theme.css": "./static/media/slick.c94f7671.ttf"
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.3a9f8c23.js",
     "static/js/4.cff56ca6.chunk.js",
-    "static/css/main.82a35813.chunk.css",
+    "static/css/main.14eda1f1.chunk.css",
     "static/js/main.1104fd13.chunk.js"
   ]
 }
