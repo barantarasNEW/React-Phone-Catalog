@@ -6,7 +6,7 @@ import { ProductsContext } from '../../contexts/ProductsContext';
 import CardSlider from '../../components/CardSlider/CardSlider';
 import MainSlider from './MainSlider/MainSlider';
 import Category from './Category/Category';
-import { filterProducts } from '../../components/utils/filterProducts';
+import { filterProducts } from '../../utils/filterProducts';
 
 const Home = () => {
   const { phones, tablets, accessories } = useContext(ProductsContext);

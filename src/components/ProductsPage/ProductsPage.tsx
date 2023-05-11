@@ -9,7 +9,6 @@ import './ProductsPage.scss';
 import { Sort } from '../../types/Sort';
 import { Product } from '../../types/Product';
 
-import { sortProducts } from '../utils/sortProducts';
 import { findValue } from '../../helpers/findValue';
 
 import Select from '../Select/Select';
@@ -18,6 +17,7 @@ import Pagination from '../Pagination/Pagination';
 import EmptyModal from '../EmptyModal/EmptyModal';
 import Search from '../SearchPage/SearchPage';
 import { itemsOptions, sortOptions } from './constants';
+import { sortProducts } from '../../utils/sortProducts';
 
 type Props = {
   products: Product[];

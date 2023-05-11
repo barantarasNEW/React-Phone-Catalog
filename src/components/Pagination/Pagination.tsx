@@ -4,9 +4,9 @@ import { v4 as unId } from 'uuid';
 import { useSearchParams } from 'react-router-dom';
 import './Pagination.scss';
 
-import { SearchLink } from '../utils/searchLink';
 import { moveToTop } from '../../helpers/moveToTop';
 import PaginationButt from './PaginationButt/PaginationButt';
+import { SearchLink } from '../../utils/searchLink';
 
 const linkClasses = (cond: boolean) => cn(
   'button-block pagination__link',
