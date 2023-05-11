@@ -1,14 +1,23 @@
 @import "../../styles/utils/vars";
+@import "../../styles/utils/mixins";
 
 .empty-modal {
-  padding: 20px;
+  padding: 10px;
   border: 1px solid $iconsColor;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
+  @include onTablet {
+    padding: 20px;
+  }
+
   &__name {
-    font-size: 20px;
+    font-size: 15px;
+
+    @include onTablet {
+      font-size: 20px;
+    }
   }
 }
