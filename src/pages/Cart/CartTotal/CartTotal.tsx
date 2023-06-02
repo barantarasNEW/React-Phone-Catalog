@@ -44,7 +44,7 @@ const CartTotal: React.FC<Props> = ({
         <div className="line cart-total__line" />
 
         <button
-          className="cart-total__checkout"
+          className="btn cart-total__checkout"
           type="button"
           onClick={onClickHandle}
         >

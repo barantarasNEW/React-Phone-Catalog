@@ -6,6 +6,7 @@ import { CartContext } from '../../contexts/CartContext';
 import { Product } from '../../types/Product';
 
 const buttonClasses = (isAddedCard: boolean) => cn(
+  'btn',
   'cart-button',
   { active: isAddedCard },
 );

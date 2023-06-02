@@ -11,6 +11,12 @@
     }
   }
 
+  &__link:hover &__img {
+    @include onDesktop {
+      transform: scale(1.1);
+    }
+  }
+
   &__img-block {
     margin-bottom: 24px;
     overflow: hidden;
@@ -27,11 +33,6 @@
 
   &__models {
     font-size: 14px;
-    line-height: 21px;
     color: $secondaryColor;
-  }
-
-  &__link:hover &__img {
-    transform: scale(1.1);
   }
 }

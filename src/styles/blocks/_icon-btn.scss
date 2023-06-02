@@ -1,14 +1,15 @@
 @import "../utils/vars";
 @import "../utils/mixins";
 
-.button-block {
-  width: 32px;
-  height: 32px;
+.icon-btn {
+  @include square(32px);
+  @include flexCenter;
   border: 1px solid $iconsColor;
   transition: border-color $primaryDuration;
-  @include flexCenter;
 
-  &:hover {
-    border-color: $primaryColor;
+  @include onDesktop {
+    &:hover {
+      border-color: $primaryColor;
+    }
   }
 }

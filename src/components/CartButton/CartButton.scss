@@ -2,8 +2,6 @@
 @import "../../styles/utils/mixins";
 
 .cart-button {
-  @include primaryButton;
-
   &.active {
     color: $addedColor;
     background-color: #fff;

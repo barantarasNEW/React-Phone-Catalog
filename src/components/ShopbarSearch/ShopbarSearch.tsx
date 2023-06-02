@@ -2,7 +2,7 @@ import './ShopbarSearch.scss';
 import { ChangeEvent, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
-import { getSearchWith } from '../../../../helpers/searchHelper';
+import { getSearchWith } from '../../helpers/searchHelper';
 
 const ShopbarSearch = () => {
   const inputRef = useRef<HTMLInputElement>(null);

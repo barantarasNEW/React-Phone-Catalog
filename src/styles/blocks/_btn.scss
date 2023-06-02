@@ -1,0 +1,13 @@
+@import '../utils/vars';
+
+.btn {
+  background-color: $primaryColor;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  transition: box-shadow $primaryDuration ease;
+
+  &:hover {
+    box-shadow: 0 3px 13px rgba(23, 32, 49, 0.26);
+  }
+}

@@ -1,4 +1,4 @@
-import { moveToTop } from '../../../helpers/moveToTop';
+import { moveToTop } from '../../helpers/moveToTop';
 import './ButtonMove.scss';
 
 const ButtonMove = () => (

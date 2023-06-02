@@ -1,6 +1,5 @@
-import { useMemo } from 'react';
-import './Category.scss';
 import { Link } from 'react-router-dom';
+import './Category.scss';
 
 type Props = {
   phonesLength: number;
@@ -13,7 +12,7 @@ const Category: React.FC<Props> = ({
   tabletsLength,
   accessoriesLength,
 }) => {
-  const categories = useMemo(() => ([
+  const categories = [
     {
       href: '/phones',
       img: './img/categories/category-phones.png',
@@ -32,7 +31,7 @@ const Category: React.FC<Props> = ({
       title: 'Accessories',
       count: accessoriesLength,
     },
-  ]), [phonesLength, tabletsLength, accessoriesLength]);
+  ];
 
   return (
     <section className="page__section category">
@@ -40,6 +39,7 @@ const Category: React.FC<Props> = ({
         <h2 className="page__title">
           Shop by category
         </h2>
+
         <ul className="category__list">
           {categories.map(({
             href,
@@ -48,19 +48,21 @@ const Category: React.FC<Props> = ({
             count,
           }) => (
             <li key={href} className="category__item">
-              <Link
-                className="category__link"
-                to={href}
-                data-cy="categoryLinksContainer"
-              >
+              <Link className="category__link" to={href}>
                 <figure>
                   <div className="category__img-block">
-                    <img className="category__img" src={img} alt="category" />
+                    <img
+                      className="category__img"
+                      src={img}
+                      alt="category"
+                    />
                   </div>
+
                   <figcaption>
                     <h3 className="category__name">
                       {title}
                     </h3>
+
                     <span className="category__models">
                       {`${count} models`}
                     </span>

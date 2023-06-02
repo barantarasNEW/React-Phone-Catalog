@@ -5,7 +5,7 @@ import { useSearchParams } from 'react-router-dom';
 import './Pagination.scss';
 
 import { moveToTop } from '../../helpers/moveToTop';
-import PaginationButt from './PaginationButt/PaginationButt';
+import PaginationButt from '../PaginationButt/PaginationButt';
 import { SearchLink } from '../../utils/searchLink';
 
 const linkClasses = (cond: boolean) => cn(

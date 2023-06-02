@@ -6,9 +6,9 @@ import './Header.scss';
 import { MenuContext } from '../../contexts/MenuContext';
 
 import Logo from '../Logo/Logo';
-import Navbar from './Navbar/Navbar';
-import Shopbar from './Shopbar/Shopbar';
-import ShopbarSearch from './Shopbar/ShopbarSearch/ShopbarSearch';
+import Navbar from '../Navbar/Navbar';
+import Shopbar from '../Shopbar/Shopbar';
+import ShopbarSearch from '../ShopbarSearch/ShopbarSearch';
 import { searchAvailableIn } from './constants';
 
 const Header = () => {

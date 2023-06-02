@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import './Shopbar.scss';
 
-import { FavoritesContext } from '../../../contexts/FavoritesContext';
-import { CartContext } from '../../../contexts/CartContext';
+import { FavoritesContext } from '../../contexts/FavoritesContext';
+import { CartContext } from '../../contexts/CartContext';
 
-import ShopbarItemDyn from './ShopbarItemDyn/ShopbarItemDyn';
+import ShopbarItemDyn from '../ShopbarItemDyn/ShopbarItemDyn';
 
 const Shopbar = ({ ...props }) => {
   const { favorites } = useContext(FavoritesContext);

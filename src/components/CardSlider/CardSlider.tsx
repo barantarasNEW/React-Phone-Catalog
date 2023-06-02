@@ -4,7 +4,7 @@ import './CardSlider.scss';
 import { Product } from '../../types/Product';
 
 import Card from '../Card/Card';
-import CardSliderButt from './CardSliderButt/CardSliderButt';
+import CardSliderButt from '../CardSliderButt/CardSliderButt';
 
 const width = 288;
 const count = 4;
