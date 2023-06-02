@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-typescript-starter-pack"]=this["webpackJsonpreact-typescript-starter-pack"]||[]).push([[8],{123:function(t,e,s){"use strict";s.r(e);var c=s(1),r=s(25),a=s(82),p=s(0);e.default=function(){var t=Object(c.useContext)(r.a).accessories;return Object(p.jsx)(a.a,{products:t,title:"Accessories"})}}}]);
+//# sourceMappingURL=8.71e83c16.chunk.js.map

@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-typescript-starter-pack"]=this["webpackJsonpreact-typescript-starter-pack"]||[]).push([[9],{124:function(t,e,s){"use strict";s.r(e);var r=s(1),a=s(82),i=s(16),c=s(0);e.default=function(){var t=Object(r.useContext)(i.a).favorites,e=Object(r.useMemo)((function(){return t.map((function(t){return t.product}))}),[t]);return Object(c.jsx)(a.a,{isDisPag:t.length<=8,isDisSelects:!0,isFavorites:!0,title:"Favorites",products:e,emptyName:"Your favorites is empty"})}}}]);
+//# sourceMappingURL=9.5d9c379f.chunk.js.map
