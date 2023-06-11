@@ -9,7 +9,7 @@ const ButtonMove = () => (
 
     <button
       type="button"
-      className="button-block"
+      className="icon-btn"
       onClick={moveToTop}
     >
       <img src="./icons/up.svg" alt="icon" />

@@ -4,7 +4,7 @@ export const images = [
   './img/banners/banner-accessories.png',
 ];
 
-export const additionalSettings = {
+export const mainSlickSettings = {
   dots: true,
   infinite: true,
   speed: 400,

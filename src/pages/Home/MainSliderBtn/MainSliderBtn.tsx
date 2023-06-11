@@ -7,8 +7,8 @@ type Props = {
 
 const MainSliderBtn: React.FC<Props> = ({ img, onClick }) => (
   <button
-    type="button"
     className="icon-btn main-slider__btn"
+    type="button"
     onClick={onClick}
     aria-label="arrow"
   >

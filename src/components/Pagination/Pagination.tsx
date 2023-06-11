@@ -9,7 +9,7 @@ import PaginationButt from '../PaginationButt/PaginationButt';
 import { SearchLink } from '../../utils/searchLink';
 
 const linkClasses = (cond: boolean) => cn(
-  'button-block pagination__link',
+  'icon-btn pagination__link',
   { active: cond },
 );
 

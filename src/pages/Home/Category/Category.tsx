@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { getCategories } from './constants';
 import './Category.scss';
 
 type Props = {
@@ -12,26 +13,11 @@ const Category: React.FC<Props> = ({
   tabletsLength,
   accessoriesLength,
 }) => {
-  const categories = [
-    {
-      href: '/phones',
-      img: './img/categories/category-phones.png',
-      title: 'Mobile phones',
-      count: phonesLength,
-    },
-    {
-      href: '/tablets',
-      img: './img/categories/category-tablets.png',
-      title: 'Tablets',
-      count: tabletsLength,
-    },
-    {
-      href: '/accessories',
-      img: './img/categories/category-accessories.png',
-      title: 'Accessories',
-      count: accessoriesLength,
-    },
-  ];
+  const categories = getCategories({
+    phonesLength,
+    tabletsLength,
+    accessoriesLength,
+  });
 
   return (
     <section className="page__section category">

@@ -5,7 +5,7 @@ import './CartItem.scss';
 import { countButton } from './constants';
 
 const buttonClasses = (cond: boolean) => cn(
-  'button-block', { 'button-dis': cond },
+  'icon-btn', { 'button-dis': cond },
 );
 
 type Props = {

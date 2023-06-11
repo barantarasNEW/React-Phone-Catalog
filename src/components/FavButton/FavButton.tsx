@@ -30,7 +30,7 @@ const FavButton: React.FC<Props> = ({ product: { name }, product }) => {
     <button
       type="button"
       className={cn(
-        'button-block fav-button',
+        'icon-btn fav-button',
         { active: isFavorite },
       )}
       onClick={onToggleHandle}

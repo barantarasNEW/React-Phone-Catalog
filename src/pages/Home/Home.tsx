@@ -1,12 +1,10 @@
 import { useContext, useMemo } from 'react';
-
+import MainSlider from './MainSlider/MainSlider';
+import Category from './Category/Category';
+import CardSlider from '../../components/CardSlider/CardSlider';
 import { ProductsContext } from '../../contexts/ProductsContext';
 import { filterProducts } from '../../utils/filterProducts';
 import { Filter } from '../../types/Filter';
-
-import CardSlider from '../../components/CardSlider/CardSlider';
-import MainSlider from './MainSlider/MainSlider';
-import Category from './Category/Category';
 
 const Home = () => {
   const { phones, tablets, accessories } = useContext(ProductsContext);

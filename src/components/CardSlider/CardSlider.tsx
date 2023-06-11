@@ -1,13 +1,9 @@
-import { useState, useMemo } from 'react';
-import './CardSlider.scss';
-
-import { Product } from '../../types/Product';
-
+import { useState, useMemo, useCallback } from 'react';
 import Card from '../Card/Card';
-import CardSliderButt from '../CardSliderButt/CardSliderButt';
-
-const width = 288;
-const count = 4;
+import CardSliderBtn from '../CardSliderBtn/CardSliderBtn';
+import { cardSliderSett } from './constants';
+import { Product } from '../../types/Product';
+import './CardSlider.scss';
 
 type Props = {
   products: Product[];
@@ -15,19 +11,20 @@ type Props = {
 };
 
 const CardSlider: React.FC<Props> = ({ products, title }) => {
+  const { width, count } = cardSliderSett;
   const [offset, setOffset] = useState(0);
-  const isLeftDisabled = offset === 0;
-  const isRightDisabled = useMemo(() => {
+  const isLeftDis = offset === 0;
+  const isRightDis = useMemo(() => {
     return offset === -(width * (products.length - count));
   }, [offset, width, products, count]);
 
-  const onClickRight = () => {
-    setOffset(currOffset => currOffset - width);
-  };
+  const onClickRight = useCallback(() => {
+    setOffset(prev => prev - width);
+  }, [width]);
 
-  const onClickLeft = () => {
-    setOffset(currOffset => currOffset + width);
-  };
+  const onClickLeft = useCallback(() => {
+    setOffset(prev => prev + width);
+  }, [width]);
 
   return (
     <section className="page__section card-slider">
@@ -47,15 +44,16 @@ const CardSlider: React.FC<Props> = ({ products, title }) => {
           </div>
 
           <div className="card-slider__butts">
-            <CardSliderButt
+            <CardSliderBtn
               img="./icons/left.svg"
-              isDis={isLeftDisabled}
-              move={onClickLeft}
+              isDis={isLeftDis}
+              onClick={onClickLeft}
             />
-            <CardSliderButt
+
+            <CardSliderBtn
               img="./icons/right.svg"
-              isDis={isRightDisabled}
-              move={onClickRight}
+              isDis={isRightDis}
+              onClick={onClickRight}
             />
           </div>
         </div>
